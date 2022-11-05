@@ -1,0 +1,94 @@
+div.basic{
+
+    position: relative;
+    
+    display: flex;
+    
+}
+
+div.content{
+    
+    font-family: Tahoma;
+    
+    font-size: 40px;
+    
+    background-color: #eeeff2;
+    
+    height: 150px;
+    
+    width: 100px;
+    
+    margin: 10px;
+    
+    float: left;
+    
+    border-left: dotted;
+    
+    border-color: #D0D0FF;
+    
+    border-left-width: 10px;
+    
+    box-shadow: 10px 10px;
+    
+    animation-name: example;
+    
+    animation-duration: 4s;
+    
+}
+
+/* Define the name fo animation */
+@keyframes example {
+
+    from {background-color: #eeeff2;}
+
+    to {background-color: blue;}
+
+}
+
+
+
+
+.content:hover{
+
+    background-color: #f3db04;
+
+    cursor: pointer;
+
+}
+
+/* Declair id for the last Div */
+div#last{
+    
+    position: fixed; 
+
+    bottom: 0;
+   
+    right: 0;
+
+}
+
+
+/* Adding hover keyword for div in order to paint it yellow when pointing with cursor */
+#last:hover{
+    
+    background-color: #f3db04;
+
+    cursor: pointer;
+
+}
+
+.pop{
+
+    position: absolute;
+
+    transform: translateY(-60%) translateX(50%);
+
+}
+
+.pop:hover{
+
+    background-color: #756c17;
+
+    cursor: pointer;
+
+}
